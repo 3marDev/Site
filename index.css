@@ -1,1 +1,5 @@
-#
+p {
+font: 1.2rem "Fira Sans", sans-serif;
+position: sticky;
+filter: blur(5px);
+}
