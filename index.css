@@ -88,8 +88,8 @@ div.social {
 .logo {
     float: left;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: 80%;
     
 }
 
@@ -104,7 +104,7 @@ div.social {
     float: right;
     color: #F2F2F2;
     text-align: center;
-    padding: 14px 90px;
+    padding: 2em 3em;
     text-decoration: none;
     font-size: 17PX;
 }
@@ -117,7 +117,7 @@ div.social {
     color: white;
 }
 .body1 {
-    padding: 20px;
+    padding: 20%;
     margin: 0px;
 }
 .body1 h1 {
