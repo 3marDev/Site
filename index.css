@@ -1,6 +1,157 @@
-p {
-font: 1.2rem "Fira Sans", sans-serif;
-position: sticky;
+/* body {
+    background-color: rgb(208, 208, 120);
+
+}
+.hid {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10ch;
+}
+.hid {
+    position: sticky;
+    background-color: azure;
+    width: 100%;
+    top:0px;
+}
+
+.p1 {
+font: 2.2rem "Serif", "sans-serif", "Fira Sans";
+position: relative;
 top: 10px;
-filter: blur(5px);
+text-align: right;
+}
+
+@keyframes tmove {
+    from {right: 0%;}
+    to {right: 70%;}
+
+  0% {filter: blur(1.0px);} 
+  25% {filter: blur(1.50px);} 
+  50% {filter: blur(2.0px);} 
+  100% {filter: blur(2.5px);} 
+}
+.p1 {
+    animation-name: tmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+div.social {
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+}
+#l3 {
+    left: 100%;
+}
+#l2 {
+    right: 50px;
+}
+#l1 {
+    right: 10px;
+}
+@keyframes tmove {
+    from {right: 0%;}
+    to {right: 70%;}
+
+  0% {filter: blur(1.0px);} 
+  25% {filter: blur(1.50px);} 
+  50% {filter: blur(2.0px);} 
+  100% {filter: blur(2.5px);} 
+} */
+
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+@keyframes MoveToLeft {
+    from {right: 0%;}
+    to {right: 80%;}
+
+  0% {filter: blur(0.0px); color: #fff;} 
+  25% {filter: blur(0.50px);color: #000;} 
+  50% {filter: blur(1.5px);color: #000;} 
+  100% {filter: blur(2.0px); color: #fff;} 
+}
+
+.pagelogo {
+    display: inline-block;
+    margin: 0% 40% 0%;
+    
+    
+}
+
+.logo {
+    float: left;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.navbar {
+    display: block;
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar a {
+    font-family: "Amiri", serif;
+    float: right;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 90px;
+    text-decoration: none;
+    font-size: 17PX;
+}
+.navbar a:hover {
+    background-color: #bbcbf3;
+    color: white;
+}
+.navbar a.active {
+    
+    color: white;
+}
+.body1 {
+    padding: 20px;
+    margin: 0px;
+}
+.body1 h1 {
+    text-align: center;
+    font-size: 60px;
+}
+.body1 p {
+    font: 2.2rem "Amiri", "Serif";
+    position: relative;
+    top: 10px;
+    text-align: right;
+}
+
+.body1 p {
+    animation-name: MoveToLeft;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.body1 h1 {
+    animation-name: MoveToRight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.btm {
+    display: block;
+    overflow: hidden;
+    background-color: #333;
+}
+.btm ul {
+    list-style-type: none;
+    display: inline-block;
+}
+.btm a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F2F2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+.btm a:hover {
+    background-color: #bbcbf3;
+    color: white;
 }
