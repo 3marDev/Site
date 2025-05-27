@@ -72,6 +72,12 @@ div.social {
   100% {filter: blur(2.0px); color: #fff;} 
 }
 
+.head {
+    background-color: white;
+    width: auto;
+    height: 30px;
+}
+
 .pagelogo {
     display: inline-block;
     margin: 0% 40% 0%;
