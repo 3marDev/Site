@@ -1,66 +1,3 @@
-/* body {
-    background-color: rgb(208, 208, 120);
-
-}
-.hid {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10ch;
-}
-.hid {
-    position: sticky;
-    background-color: azure;
-    width: 100%;
-    top:0px;
-}
-
-.p1 {
-font: 2.2rem "Serif", "sans-serif", "Fira Sans";
-position: relative;
-top: 10px;
-text-align: right;
-}
-
-@keyframes tmove {
-    from {right: 0%;}
-    to {right: 70%;}
-
-  0% {filter: blur(1.0px);} 
-  25% {filter: blur(1.50px);} 
-  50% {filter: blur(2.0px);} 
-  100% {filter: blur(2.5px);} 
-}
-.p1 {
-    animation-name: tmove;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-div.social {
-    position: fixed;
-    bottom: 0px;
-    height: 40px;
-    width: 100%;
-    background-color: white;
-}
-#l3 {
-    left: 100%;
-}
-#l2 {
-    right: 50px;
-}
-#l1 {
-    right: 10px;
-}
-@keyframes tmove {
-    from {right: 0%;}
-    to {right: 70%;}
-
-  0% {filter: blur(1.0px);} 
-  25% {filter: blur(1.50px);} 
-  50% {filter: blur(2.0px);} 
-  100% {filter: blur(2.5px);} 
-} */
-
 @import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
 @keyframes MoveToLeft {
     from {right: 0%;}
@@ -72,81 +9,133 @@ div.social {
   100% {filter: blur(2.0px); color: #fff;} 
 }
 
-.head {
-    background-color: white;
-    width: auto;
-    height: 30px;
+body {
+    font-family: "Amiri","Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
 }
 
-.pagelogo {
-    display: inline-block;
-    margin: 0% 40% 0%;
-    
-    
+header {
+    background-color: rgb(101, 101, 99);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.logo {
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-content img {
+    width: 80px;
+    height:auto;
     float: left;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+}
+.header-content h1 {
+    font-size: 5rem;
+    left: 10px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
     
 }
 
-
-.navbar {
-    display: block;
-    overflow: hidden;
-    background-color: #333;
+nav ul li {
+    margin: 0 20px;
 }
-.navbar a {
-    font-family: "Amiri", serif;
-    float: right;
-    color: #F2F2F2;
-    text-align: center;
-    padding: 14px 90px;
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 17PX;
+    padding: 10px;
+    transition: marigin-right 3s ;
 }
-.navbar a:hover {
-    background-color: #bbcbf3;
+
+nav ul li a:hover {
+    background-color: rgb(101, 101, 99, 0.15);
     color: white;
 }
-.navbar a.active {
-    
-    color: white;
+
+nav ul li a.active {
+    text-decoration: underline;
 }
-.body1 {
-    padding: 20px;
+
+.ind-container {
+    padding: 0 20px;
     margin: 0px;
 }
-.body1 h1 {
-    text-align: center;
+
+.ind-container h1 {
+    text-align: none;
     font-size: 60px;
 }
-.body1 p {
+
+.error {
+    text-align: center;
+}
+
+.ind-container p {
     font: 2.2rem "Amiri", "Serif";
     position: relative;
     top: 10px;
     text-align: right;
 }
 
-.body1 p {
+.ind-container p {
     animation-name: MoveToLeft;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
-.body1 h1 {
-    animation-name: MoveToRight;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
-/* footer {
-    background-color: #333;
-    color: blue;
+
+.product {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: calc((100% / 2) - 40px);
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
     text-align: center;
-} */
- 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -174,4 +163,18 @@ footer a {
 footer a:hover {
     background-color: #bbcbf3;
     color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        padding: auto auto;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
 }

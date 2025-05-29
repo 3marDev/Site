@@ -1,50 +1,66 @@
+<!DOCTYPE HTML>
 <html lang="ar">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="indexx.css"/>
+        <link rel="stylesheet" href="index.css"/>
         <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-        <title>خدماتنا</title>
+        <title>الصفحة الرئيسية</title>
     </head>
     <body>
-        <div class="head">
-        <!-- headline -->
-        </div>
-
-        <div class="pagelogo">
-            <img class="logo" src="static/2.PNG" alt="Logo">
-        </div>
-
-        <div class="navbar">
-            <a class="active" href="/index.html" title="Home">الصفحة الرئيسية</a>
-            <a href="#repair" title="repair">صيانة</a>
-            <a href="#program" title="porogram">برمجة</a>
-            <a href="#inquiry" title="inquiry">استعلام</a>
-        </div>
-        <!-- container body -->
-        <div class="serv1" id="repair">
-            <h3>repair</h3>
-        </div>
-        <div class="serv2" id="porogram">
-            <h3></h3>
-        </div>
-        <div class="serv3" id="inquiry">
-            <h3></h3>
-        </div>
-        <!-- container body -->
-        <div class="serv4">
-            <p></p>
-        </div>
-
-        <div class="btm">
+        <!-- header containers -->
+        <header>
+            <div class="header-content">
+                <img src="/images/2.PNG" alt="logo">
+                <h1>C2B</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/content.html" title="content-us">عنا</a></li>
+                        <li> <a href="/service.html" title="Services">خدماتنا</a></li>
+                        <li><a class="active" href="/index.html" title="Home">الصفحة الرئيسية</a></li>
+                    </ul>
+                    <div class="ico"></div>
+                </nav>
+            </div>
+        </header>
+        <!-- products container -->
+        <main class="product-container">
+            <section class="product" id="product1">
+                <div>
+                    <img src="/images/programming.svg" alt="" width="">
+                    <h2>برمجة</h2>
+                    <p class="price">كتابة اكواد | بوتات | تنقيب عن البيانات | تحليل البيانات</p>
+                </div>
+            </section>
+            <section class="product" id="product2">
+                <div>
+                    <img src="/images/computer.svg" alt="" width="">
+                    <h2>صيانة</h2>
+                    <p class="price">هاردوير | سوفت وير | طابعات | اقراص صلبة </p>
+                </div>
+            </section>
+            <section class="product" id="product3">
+                <div>
+                    <img src="/images/inquiry.svg" alt="" width="">
+                    <h2>استعلامات</h2>
+                    <p class="price"> خدمات المؤسسات | اخرى</p>
+                </div>
+            </section>
+             <section class="product" id="product3">
+                <div>
+                    <img src="/images/request-quote.svg" alt="" width="">
+                    <h2>خدمات غير مدرجة</h2>
+                    <p class="price"> خدمات حسب رغبة العميل</p>
+                </div>
+            </section>
+        </main>
+        <!-- copy rihgts -->
+        <footer>
             <ul>
                 <li><a href="https://wa.me/+966502722676" title="c2b on whatsapp">WhatsApp</a></li>
                 <li><a href="mailto:info@c2b.sa" title="C2B on Mail">info@c2b.sa</a></li>
-                <li><a href="https://gtihub.com/3mardev" title="C2B Administrator">Github</a></li>
+                <li><a href="https://github.com/3mardev" title="C2B Administrator">Github</a></li>
             </ul>
-        </div>
-
-        <footer class="ft">
-
+            <p>&copy; 2025 C2B All rightd reserves.</p>
         </footer>
     </body>
 </html>
